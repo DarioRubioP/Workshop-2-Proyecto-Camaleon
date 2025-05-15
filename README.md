@@ -1,2 +1,2 @@
 # UhQueSed
-Workshop1
+Workshop2
