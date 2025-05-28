@@ -19,11 +19,11 @@ public class BotonComboManager : MonoBehaviour
     private float tiempoRestanteCambio;
 
     [Header("Texto de instrucciones")]
-    public TextMeshProUGUI textoIndicador; // "Presiona botón X"
-    public TextMeshProUGUI textoProgreso;  // "Progreso = X"
+    public TextMeshProUGUI textoIndicador;
+    public TextMeshProUGUI textoProgreso; 
 
     [Header("Texto al completar progreso")]
-    public GameObject textoFinal; // Se activa al llegar a 100
+    public GameObject textoFinal;
 
     [Header("Objeto que tiembla")]
     public Transform objetoTemblor;
@@ -38,6 +38,8 @@ public class BotonComboManager : MonoBehaviour
 
     private bool cuentaRegresivaIniciada = false;
 
+    public AudioSource audioSource;
+
     void Start()
     {
         tiempoRestanteCambio = tiempoCambio;
@@ -51,7 +53,6 @@ public class BotonComboManager : MonoBehaviour
     {
         if (!progresoCompletado)
         {
-            // CAMBIAR TECLA CADA 2 SEGUNDOS
             tiempoRestanteCambio -= Time.deltaTime;
             if (tiempoRestanteCambio <= 0f)
             {
@@ -59,11 +60,9 @@ public class BotonComboManager : MonoBehaviour
                 tiempoRestanteCambio = tiempoCambio;
             }
 
-            // TEXTO INSTRUCCIÓN
             if (textoIndicador != null)
                 textoIndicador.text = "Presiona botón " + teclaActual;
 
-            // DETECCIÓN DE TECLA CORRECTA
             if (Input.GetKeyDown(teclaActual.ToLower()))
             {
                 contador += velocidadSubida * Time.deltaTime * 60f;
@@ -86,11 +85,9 @@ public class BotonComboManager : MonoBehaviour
                 contador = Mathf.Clamp(contador, 0f, maxContador);
             }
 
-            // ACTUALIZAR TEXTO PROGRESO
             if (textoProgreso != null)
                 textoProgreso.text = "Progreso = " + Mathf.FloorToInt(contador);
 
-            // SI LLEGA A 100
             if (contador >= maxContador)
             {
                 progresoCompletado = true;
@@ -100,7 +97,6 @@ public class BotonComboManager : MonoBehaviour
             }
         }
 
-        // SI EL TEXTO FINAL ESTÁ ACTIVO Y NO HA EMPEZADO LA CUENTA
         if (textoFinal != null && textoFinal.activeSelf && !cuentaRegresivaIniciada)
         {
             cuentaRegresivaIniciada = true;
@@ -126,6 +122,11 @@ public class BotonComboManager : MonoBehaviour
             objetoTemblor.position = new Vector3(posicionOriginal.x + offsetX, posicionOriginal.y, posicionOriginal.z);
             tiempo += Time.deltaTime;
             yield return null;
+        }
+
+        if (audioSource != null)
+        {
+            audioSource.Play();
         }
 
         objetoTemblor.position = posicionOriginal;

@@ -10,24 +10,22 @@ public class DeathAndTimeManager : MonoBehaviour
     private bool yaDetectado = false;
 
     [Header("Cambio de escena por tiempo")]
-    public GameObject textoAdvertencia; // Texto que se activa a los 10s
+    public GameObject textoAdvertencia;
     private float tiempoTotal = 0f;
     private bool yaMostrado = false;
     private bool cuentaRegresivaIniciada = false;
 
     [Header("Destruir objeto al mostrar texto")]
-    public GameObject objetoADestruir; // El objeto que quieres destruir cuando aparece el texto
+    public GameObject objetoADestruir;
 
     [Header("Nombre de la siguiente escena")]
     public string nextSceneName = "NextScene";
 
     void Update()
     {
-        // CONTADOR GLOBAL
         tiempoTotal += Time.deltaTime;
 
-        // Mostrar texto a los 10s
-        if (tiempoTotal >= 10f && !yaMostrado)
+        if (tiempoTotal >= 30f && !yaMostrado)
         {
             textoAdvertencia.SetActive(true);
             yaMostrado = true;
@@ -39,14 +37,12 @@ public class DeathAndTimeManager : MonoBehaviour
             }
         }
 
-        // Si el texto está activo y aún no empezó el cambio de escena
         if (textoAdvertencia.activeSelf && !cuentaRegresivaIniciada)
         {
             cuentaRegresivaIniciada = true;
             StartCoroutine(CambiarDeEscena());
         }
 
-        // DETECCIÓN DE DESACTIVACIÓN
         if (!yaDetectado && objetoAObservar != null && !objetoAObservar.activeInHierarchy)
         {
             isDeath = true;

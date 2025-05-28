@@ -32,11 +32,6 @@ public class LifeSystem : MonoBehaviour
         UpdateLifeDisplay();
     }
 
-    private void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag(obstacleTag))
@@ -51,7 +46,6 @@ public class LifeSystem : MonoBehaviour
 
         currentLife--;
 
-        // Efectos
         if (hitEffect != null) Instantiate(hitEffect, transform.position, Quaternion.identity);
         if (hitSound != null) AudioSource.PlayClipAtPoint(hitSound, transform.position);
 
@@ -70,8 +64,6 @@ public class LifeSystem : MonoBehaviour
     private IEnumerator ImmunityRoutine()
     {
         isImmune = true;
-
-        // Parpadeo visual durante inmunidad
         float elapsedTime = 0f;
         while (elapsedTime < immunityTime)
         {
@@ -94,21 +86,15 @@ public class LifeSystem : MonoBehaviour
 
     private void GameOver()
     {
-        // Mostrar UI de Game Over
         if (gameOverPanel != null)
         {
             gameOverPanel.SetActive(true);
             
         }
-
-        // Desactivar jugador
         gameObject.SetActive(false);
 
-        // Pausar el juego (opcional)
-        // Time.timeScale = 0f;
     }
 
-    // Método para reiniciar (llamar desde botón UI)
     public void RestartGame()
     {
         currentLife = maxLife;
@@ -119,8 +105,5 @@ public class LifeSystem : MonoBehaviour
         {
             gameOverPanel.SetActive(false);
         }
-
-        // Reanudar juego si estaba pausado
-        // Time.timeScale = 1f;
     }
 }
