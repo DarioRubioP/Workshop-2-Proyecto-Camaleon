@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "Exterior_camino_a\u0301rboles_0": -9013591212579655399
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

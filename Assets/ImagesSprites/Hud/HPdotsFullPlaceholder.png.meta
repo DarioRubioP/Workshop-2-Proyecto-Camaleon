@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: aee3d1cdce0a0bc4dbccf0ea0615fd00
+guid: a59941a773da7db42a3b204246035fff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8702394031650436867
-    second: ChatGPT Image 27 may 2025, 04_26_42 p.m._0
+      213: 6441430221657027730
+    second: HPdotsFull_0
+  - first:
+      213: 7856994894811161475
+    second: HPdotsFull_1
+  - first:
+      213: -3855472340981029418
+    second: HPdotsFull_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image 27 may 2025, 04_26_42 p.m._0
+      name: HPdotsFull_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 3
+        y: 3
+        width: 26
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df80ff74cb2ea3780800000000000000
-      internalID: -8702394031650436867
+      spriteID: 294355f88ae846950800000000000000
+      internalID: 6441430221657027730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HPdotsFull_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 383e64b8a37a90d60800000000000000
+      internalID: 7856994894811161475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HPdotsFull_2
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 3
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d56b72455c9e7ac0800000000000000
+      internalID: -3855472340981029418
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChatGPT Image 27 may 2025, 04_26_42 p.m._0: -8702394031650436867
+      HPdotsFull_0: 6441430221657027730
+      HPdotsFull_1: 7856994894811161475
+      HPdotsFull_2: -3855472340981029418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -141,6 +141,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -509,7 +522,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "LOGO-CAMALEO\u0301N_2022_0": -6415392002901163352
+      "LOGO-CAMALEO\u0301N_2022_1": 1686876989198475952
+      "LOGO-CAMALEO\u0301N_2022_10": 5982850684400075797
+      "LOGO-CAMALEO\u0301N_2022_11": 4353424010525698296
+      "LOGO-CAMALEO\u0301N_2022_12": 6056983165765338894
+      "LOGO-CAMALEO\u0301N_2022_13": -224688980461937606
+      "LOGO-CAMALEO\u0301N_2022_14": -6066910737937574920
+      "LOGO-CAMALEO\u0301N_2022_15": -9186537757076185077
+      "LOGO-CAMALEO\u0301N_2022_2": 4389850124575010092
+      "LOGO-CAMALEO\u0301N_2022_3": 3707100513826162394
+      "LOGO-CAMALEO\u0301N_2022_4": 8262375593689067197
+      "LOGO-CAMALEO\u0301N_2022_5": 1014437804074185507
+      "LOGO-CAMALEO\u0301N_2022_6": 6753499110581258724
+      "LOGO-CAMALEO\u0301N_2022_7": -6467935082329591237
+      "LOGO-CAMALEO\u0301N_2022_8": -3356286686391457866
+      "LOGO-CAMALEO\u0301N_2022_9": 8358682904891676903
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

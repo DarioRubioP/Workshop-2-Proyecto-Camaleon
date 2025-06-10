@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CAMALEON_turnaround_00006_0: 1473239830815013314
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
