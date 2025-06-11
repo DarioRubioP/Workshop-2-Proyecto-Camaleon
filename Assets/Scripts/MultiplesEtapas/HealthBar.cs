@@ -6,7 +6,7 @@ public class HealthBar : MonoBehaviour
     public Image hpBar;
 
 
-    public void UpdateHealth(float currentHealth, int health)
+    public void UpdateHealth(int currentHealth, int health)
     {
         hpBar.fillAmount = health / currentHealth;
     }

@@ -7,6 +7,8 @@ public class VidaPorCollision : MonoBehaviour
     public int vidaTotal = 3;
     public TextMeshProUGUI textoVida;
 
+    //public HealthBar healthBar;
+
     void Start()
     {
         ActualizarTextoVida();
@@ -23,6 +25,8 @@ public class VidaPorCollision : MonoBehaviour
             {
                 gameObject.SetActive(false);
             }
+
+            //healthBar.UpdateHealth(vidaTotal, 3);
         }
     }
 

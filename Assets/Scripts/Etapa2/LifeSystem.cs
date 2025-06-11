@@ -23,6 +23,7 @@ public class LifeSystem : MonoBehaviour
 
     private bool isImmune = false;
     private SpriteRenderer spriteRenderer;
+    //public HealthBar healthBar;
     
 
     private void Awake()
@@ -50,6 +51,7 @@ public class LifeSystem : MonoBehaviour
         if (hitSound != null) AudioSource.PlayClipAtPoint(hitSound, transform.position);
 
         UpdateLifeDisplay();
+        //healthBar.UpdateHealth(currentLife, maxLife);
 
         if (currentLife <= 0)
         {
