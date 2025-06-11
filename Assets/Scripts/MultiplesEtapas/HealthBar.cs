@@ -6,8 +6,10 @@ public class HealthBar : MonoBehaviour
     public Image hpBar;
 
 
-    public void UpdateHealth(int currentHealth, int health)
+    public void UpdateHealth(float currentHealth, float health)
     {
-        hpBar.fillAmount = health / currentHealth;
+        hpBar.fillAmount = currentHealth / health;
+
+        //Debug.Log("cambio ValorVida");
     }
 }

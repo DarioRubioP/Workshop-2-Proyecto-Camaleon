@@ -23,14 +23,15 @@ public class LifeSystem : MonoBehaviour
 
     private bool isImmune = false;
     private SpriteRenderer spriteRenderer;
-    //public HealthBar healthBar;
+
+    public HealthBar healthBar;
     
 
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentLife = maxLife;
-        UpdateLifeDisplay();
+        //UpdateLifeDisplay();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -50,8 +51,8 @@ public class LifeSystem : MonoBehaviour
         if (hitEffect != null) Instantiate(hitEffect, transform.position, Quaternion.identity);
         if (hitSound != null) AudioSource.PlayClipAtPoint(hitSound, transform.position);
 
-        UpdateLifeDisplay();
-        //healthBar.UpdateHealth(currentLife, maxLife);
+        //UpdateLifeDisplay();
+        healthBar.UpdateHealth(currentLife, maxLife);
 
         if (currentLife <= 0)
         {
@@ -78,13 +79,13 @@ public class LifeSystem : MonoBehaviour
         isImmune = false;
     }
 
-    private void UpdateLifeDisplay()
+    /*private void UpdateLifeDisplay()
     {
         if (lifeText != null)
         {
             lifeText.text = $"Vidas: {currentLife}/{maxLife}";
         }
-    }
+    }*/
 
     private void GameOver()
     {
@@ -100,7 +101,7 @@ public class LifeSystem : MonoBehaviour
     public void RestartGame()
     {
         currentLife = maxLife;
-        UpdateLifeDisplay();
+        //UpdateLifeDisplay();
         gameObject.SetActive(true);
 
         if (gameOverPanel != null)

@@ -7,11 +7,12 @@ public class VidaPorCollision : MonoBehaviour
     public int vidaTotal = 3;
     public TextMeshProUGUI textoVida;
 
-    //public HealthBar healthBar;
+    public HealthBar healthBar;
+
 
     void Start()
     {
-        ActualizarTextoVida();
+        //ActualizarTextoVida();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -19,22 +20,22 @@ public class VidaPorCollision : MonoBehaviour
         if (other.CompareTag("Obstaculo"))
         {
             vidaTotal--;
-            ActualizarTextoVida();
+            //ActualizarTextoVida();
 
             if (vidaTotal <= 0)
             {
                 gameObject.SetActive(false);
             }
 
-            //healthBar.UpdateHealth(vidaTotal, 3);
+            healthBar.UpdateHealth(vidaTotal, 3);
         }
     }
 
-    void ActualizarTextoVida()
+    /*void ActualizarTextoVida()
     {
         if (textoVida != null)
         {
             textoVida.text = "Vida = " + vidaTotal;
         }
-    }
+    }*/
 }
