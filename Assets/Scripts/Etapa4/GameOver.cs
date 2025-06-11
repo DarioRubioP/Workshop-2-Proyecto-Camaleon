@@ -18,6 +18,8 @@ public class GameOver : MonoBehaviour
     private bool yaActivadoPorContador = false;
     private float tiempo = 0f;
 
+    //public ProgressMetter progressBar;
+
     void Start()
     {
         if (textoAlDesactivar != null) textoAlDesactivar.gameObject.SetActive(false);
@@ -52,6 +54,8 @@ public class GameOver : MonoBehaviour
 
                 StartCoroutine(CambiarEscenaDespuesDeTiempo(3f));
             }
+
+            //progressBar.FillProgressBar(tiempo, 30);
         }
     }
 

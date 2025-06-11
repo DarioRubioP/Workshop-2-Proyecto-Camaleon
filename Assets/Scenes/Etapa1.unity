@@ -1802,6 +1802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3981470866965429200, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
+      propertyPath: m_text
+      value: Presiona        o        Para mover
+      objectReference: {fileID: 0}
     - target: {fileID: 5845314402318052676, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_UiScaleMode
       value: 1
