@@ -731,7 +731,7 @@ MonoBehaviour:
   textoAlDesactivar: {fileID: 1371296526}
   contadorTexto: {fileID: 958797144}
   textoFinal: {fileID: 951285161}
-  nextSceneName: SampleScene
+  nextSceneName: VictoryScene
 --- !u!1 &422809167
 GameObject:
   m_ObjectHideFlags: 0
