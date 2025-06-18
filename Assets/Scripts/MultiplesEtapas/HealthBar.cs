@@ -3,12 +3,19 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Image hpBar;
+    public Image[] hpBar;
 
-
-    public void UpdateHealth(float currentHealth, float health)
+    private void Start()
     {
-        hpBar.fillAmount = currentHealth / health;
+        foreach (var hp in hpBar)
+        {
+            hp.fillAmount = 1;
+        }
+    }
+
+    public void UpdateHealth(int currentHealth)
+    {
+        hpBar[currentHealth - 1].fillAmount = 0;
 
         //Debug.Log("cambio ValorVida");
     }

@@ -4,6 +4,8 @@ using System.Collections;
 
 public class DeathAndTimeManager : MonoBehaviour
 {
+    [SerializeField] ProgressMetter progressBar;
+
     [Header("Detectar desactivación de objeto")]
     public GameObject objetoAObservar;
     private bool isDeath = false;
@@ -12,6 +14,7 @@ public class DeathAndTimeManager : MonoBehaviour
     [Header("Cambio de escena por tiempo")]
     public GameObject textoAdvertencia;
     private float tiempoTotal = 0f;
+    public float tiempoMaximo;
     private bool yaMostrado = false;
     private bool cuentaRegresivaIniciada = false;
 
@@ -24,8 +27,9 @@ public class DeathAndTimeManager : MonoBehaviour
     void Update()
     {
         tiempoTotal += Time.deltaTime;
+        progressBar.FillProgressBar(tiempoTotal, tiempoMaximo);
 
-        if (tiempoTotal >= 30f && !yaMostrado)
+        if (tiempoTotal >= tiempoMaximo && !yaMostrado)
         {
             textoAdvertencia.SetActive(true);
             yaMostrado = true;

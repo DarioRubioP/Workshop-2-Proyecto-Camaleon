@@ -19,6 +19,7 @@ public class VidaPorCollision : MonoBehaviour
     {
         if (other.CompareTag("Obstaculo"))
         {
+            healthBar.UpdateHealth(vidaTotal);
             vidaTotal--;
             //ActualizarTextoVida();
 
@@ -27,7 +28,6 @@ public class VidaPorCollision : MonoBehaviour
                 gameObject.SetActive(false);
             }
 
-            healthBar.UpdateHealth(vidaTotal, 3);
         }
     }
 

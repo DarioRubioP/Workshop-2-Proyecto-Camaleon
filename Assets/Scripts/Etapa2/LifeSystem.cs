@@ -46,13 +46,13 @@ public class LifeSystem : MonoBehaviour
     {
         if (isImmune) return;
 
+        healthBar.UpdateHealth(currentLife);
         currentLife--;
 
         if (hitEffect != null) Instantiate(hitEffect, transform.position, Quaternion.identity);
         if (hitSound != null) AudioSource.PlayClipAtPoint(hitSound, transform.position);
 
         //UpdateLifeDisplay();
-        healthBar.UpdateHealth(currentLife, maxLife);
 
         if (currentLife <= 0)
         {
