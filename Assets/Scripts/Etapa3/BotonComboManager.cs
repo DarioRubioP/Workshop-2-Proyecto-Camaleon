@@ -6,6 +6,8 @@ using System.Collections;
 
 public class BotonComboManager : MonoBehaviour
 {
+    [SerializeField] ProgressMetter progressBar;
+
     [Header("Contador")]
     public float contador = 0f;
     public float velocidadSubida = 10f;
@@ -78,11 +80,13 @@ public class BotonComboManager : MonoBehaviour
 
                 if (prefab != null && puntoInstancia != null)
                     Instantiate(prefab, puntoInstancia.position, Quaternion.identity);
+                progressBar.FillProgressBar(contador, maxContador);
             }
             else
             {
                 contador -= velocidadBajada * Time.deltaTime;
                 contador = Mathf.Clamp(contador, 0f, maxContador);
+                progressBar.FillProgressBar(contador, maxContador);
             }
 
             if (textoProgreso != null)
