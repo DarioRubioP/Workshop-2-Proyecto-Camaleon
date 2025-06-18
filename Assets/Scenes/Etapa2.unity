@@ -1064,12 +1064,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 8488649688907516912, guid: 2c24b341a26dc3841a7c1e5177b2d4c3, type: 3}
+  player: {fileID: 1027460526}
   spawnPoints:
   - {fileID: 923166741}
   - {fileID: 680859968}
   - {fileID: 1097639409}
   - {fileID: 875021003}
+  - {fileID: 1034976573}
+  - {fileID: 1937125166}
+  - {fileID: 1372590923}
+  - {fileID: 1858494655}
   spawnDelay: 1
+  _followsYAxis: 1
 --- !u!1 &1235954853
 GameObject:
   m_ObjectHideFlags: 0

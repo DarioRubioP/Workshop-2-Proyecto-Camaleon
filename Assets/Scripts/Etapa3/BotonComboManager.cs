@@ -32,7 +32,9 @@ public class BotonComboManager : MonoBehaviour
     [Header("Prefab a instanciar")]
     public GameObject prefab;
     public Transform puntoInstancia;
-
+    public Transform puntoInstancia2;
+    public Transform puntoInstancia3;
+    
     [Header("Escena siguiente")]
     public string nextSceneName = "NextScene";
 
@@ -78,6 +80,8 @@ public class BotonComboManager : MonoBehaviour
 
                 if (prefab != null && puntoInstancia != null)
                     Instantiate(prefab, puntoInstancia.position, Quaternion.identity);
+                    Instantiate(prefab, puntoInstancia2.position, Quaternion.identity);
+                    Instantiate(prefab, puntoInstancia3.position, Quaternion.identity);
             }
             else
             {
