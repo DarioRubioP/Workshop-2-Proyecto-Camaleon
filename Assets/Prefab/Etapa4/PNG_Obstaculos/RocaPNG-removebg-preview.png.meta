@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RocaPNG-removebg-preview_0: 3760709630085408140
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

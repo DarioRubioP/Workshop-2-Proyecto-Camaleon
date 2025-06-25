@@ -17,8 +17,6 @@ public class EvaporadorAgua : MonoBehaviour
 
     [Header("Configuración UI")]
     public TextMeshProUGUI textoEvaporacion;
-    public Button botonIzquierda;
-    public Button botonDerecha;
 
     [Header("Configuración Escena")]
     public string nextSceneName = "NextScene";
@@ -35,13 +33,7 @@ public class EvaporadorAgua : MonoBehaviour
 
     void Start()
     {
-        //Asignar eventos a botones UI
-        botonIzquierda.onClick.AddListener(() => BotonUIRotar(-1));
-        botonDerecha.onClick.AddListener(() => BotonUIRotar(1));
 
-        //También detectar cuándo se suelta el botón (requiere métodos públicos)
-        botonIzquierda.gameObject.AddComponent<BotonUIHold>().Init(() => rotandoIzquierda = true, () => rotandoIzquierda = false);
-        botonDerecha.gameObject.AddComponent<BotonUIHold>().Init(() => rotandoDerecha = true, () => rotandoDerecha = false);
     }
 
     void Update()

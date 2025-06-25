@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CAMALEON_poses_00009_0: 2779964395634075288
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
