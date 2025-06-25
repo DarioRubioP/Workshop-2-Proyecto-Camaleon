@@ -727,11 +727,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be90c123aa62d4b4b800fc81e49bc5dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  progressBar: {fileID: 1439529375}
   objetoAObservar: {fileID: 83030949}
   textoAlDesactivar: {fileID: 1371296526}
   contadorTexto: {fileID: 958797144}
   textoFinal: {fileID: 951285161}
   nextSceneName: VictoryScene
+  tiempoMaximo: 30
 --- !u!1 &422809167
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1002,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29348a85656c843be4869ddbdbbb21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpBar: {fileID: 2001302594}
+  hpBar:
+  - {fileID: 2098347538}
 --- !u!4 &496442870
 Transform:
   m_ObjectHideFlags: 0
@@ -1827,7 +1830,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 2040122322}
-  maxProgress: 30
 --- !u!4 &1439529376
 Transform:
   m_ObjectHideFlags: 0

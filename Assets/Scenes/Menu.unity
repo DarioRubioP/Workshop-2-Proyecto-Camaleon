@@ -3465,7 +3465,7 @@ MonoBehaviour:
   frecuencia: 1
   intensidad: 0.05
   audioSource: {fileID: 1877781246}
-  nombreEscena: SampleScene
+  nombreEscena: Etapa1
   retardoEscena: 3
 --- !u!114 &1877781248
 MonoBehaviour:
