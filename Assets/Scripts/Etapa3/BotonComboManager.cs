@@ -6,6 +6,8 @@ using System.Collections;
 
 public class BotonComboManager : MonoBehaviour
 {
+    [SerializeField] ProgressMetter progressBar;
+
     [Header("Contador")]
     public float contador = 0f;
     public float velocidadSubida = 10f;
@@ -53,6 +55,8 @@ public class BotonComboManager : MonoBehaviour
 
     void Update()
     {
+        progressBar.FillProgressBar(contador, maxContador);
+
         if (!progresoCompletado)
         {
             tiempoRestanteCambio -= Time.deltaTime;
