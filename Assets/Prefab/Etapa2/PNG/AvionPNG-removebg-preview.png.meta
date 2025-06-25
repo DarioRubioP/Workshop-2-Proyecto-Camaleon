@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AvionPNG-removebg-preview_0: 6284264045572492598
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
