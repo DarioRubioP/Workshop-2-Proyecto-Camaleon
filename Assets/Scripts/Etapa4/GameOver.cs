@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    [SerializeField] ProgressMetter progressBar;
+
     [Header("Parte 1: Reinicio si objeto se desactiva")]
     public GameObject objetoAObservar;
     public TextMeshProUGUI textoAlDesactivar;
@@ -17,6 +19,7 @@ public class GameOver : MonoBehaviour
     private bool yaActivadoPorDesactivacion = false;
     private bool yaActivadoPorContador = false;
     private float tiempo = 0f;
+    public float tiempoMaximo;
 
     //public ProgressMetter progressBar;
 
@@ -43,10 +46,11 @@ public class GameOver : MonoBehaviour
         {
             tiempo += Time.deltaTime;
             int tiempoInt = Mathf.FloorToInt(tiempo);
+            progressBar.FillProgressBar(tiempo, tiempoMaximo);
             if (contadorTexto != null)
                 contadorTexto.text = "Contador: " + tiempoInt;
 
-            if (tiempo >= 30f)
+            if (tiempo >= tiempoMaximo)
             {
                 yaActivadoPorContador = true;
                 if (textoFinal != null)
