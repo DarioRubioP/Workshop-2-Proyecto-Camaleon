@@ -105,7 +105,7 @@ MonoBehaviour:
   velocidadSubida: 2
   spriteArr:
   - {fileID: -8747728881343287191, guid: 7faf3e1b35ff62548ad39cf366820677, type: 3}
-  - {fileID: -7051731330605357381, guid: 3f4aaf40a6fef32429a4230d3ac37a95, type: 3}
+  - {fileID: 3760709630085408140, guid: 9d6904cf660eeee4f80ee263f9f4a27f, type: 3}
   spriteCount: 0
   s_Renderer: {fileID: 2625171517963968564}
 --- !u!50 &6698316255091226016

@@ -1732,8 +1732,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 305916809461566302, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_text
-      value: W
+      value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 766245444308599283, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5651163114573580929, guid: 013670528477e9d41b97aa5324007bb7, type: 3}
+    - target: {fileID: 968267976379282019, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8033118869560179231, guid: 013670528477e9d41b97aa5324007bb7, type: 3}
     - target: {fileID: 2381347214972170802, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1045
@@ -1752,7 +1760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2626230612008547841, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_text
-      value: S
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3209040502330971099, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_Name
@@ -1760,7 +1768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981470866965429200, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_text
-      value: Presiona        o        Para mover
+      value: Presiona <sprite=57> o <sprite=75> para mover
       objectReference: {fileID: 0}
     - target: {fileID: 3981470866965429200, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_fontSize
@@ -1895,7 +1903,9 @@ PrefabInstance:
       value: 452
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8794854553581266559, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
+    - {fileID: 5842891721555150395, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7133164667061008525, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       insertIndex: -1
@@ -2092,7 +2102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.764151, g: 0.764151, b: 0.764151, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -196,5 +196,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 7244875890223947990}
   spriteArr:
-  - {fileID: 6566925045060170668, guid: b13a94ceac679c94a9bf013b550bbe8f, type: 3}
-  - {fileID: 9201321467233117368, guid: 0f32df7408fa14e4684dcadafb02cd31, type: 3}
+  - {fileID: 6284264045572492598, guid: 6f67d3ee2f5696a43be72f3f6c4dc36e, type: 3}
+  - {fileID: 4493449326965380982, guid: 0cbb19401a83f994b8ea5495c5ee742e, type: 3}

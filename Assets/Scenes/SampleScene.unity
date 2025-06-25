@@ -504,7 +504,11 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6333662a68e2ebc418915d3faa071f0d, type: 2}
+<<<<<<< Updated upstream
   m_sharedMaterial: {fileID: -7929694480004598990, guid: 6333662a68e2ebc418915d3faa071f0d, type: 2}
+=======
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+>>>>>>> Stashed changes
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -580,17 +584,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315895640}
   m_CullTransparentMesh: 1
---- !u!114 &405763358 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1665412319060738647, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
-  m_PrefabInstance: {fileID: 1620153931388583540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -769,8 +762,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 16
   textoEvaporacion: {fileID: 315895642}
-  botonIzquierda: {fileID: 405763358}
-  botonDerecha: {fileID: 1455197673}
+  botonIzquierda: {fileID: 0}
+  botonDerecha: {fileID: 0}
   nextSceneName: Etapa2
   audioSource: {fileID: 588552967}
 --- !u!212 &588552963
@@ -1314,17 +1307,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1455197673 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2411857295687517334, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
-  m_PrefabInstance: {fileID: 1620153931388583540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1534323213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1820,7 +1802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3981470866965429200, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_text
-      value: Presiona        o        Para mover
+      value: Presiona <sprite=74>o<sprite=76> Para mover
       objectReference: {fileID: 0}
     - target: {fileID: 3981470866965429200, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
       propertyPath: m_margin.w
@@ -1943,7 +1925,9 @@ PrefabInstance:
       value: 442
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8794854553581266559, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
+    - {fileID: 5842891721555150395, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3209040502330971099, guid: 7585bd3258bf45e4b9fde187096f0390, type: 3}
