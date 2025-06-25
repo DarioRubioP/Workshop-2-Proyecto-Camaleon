@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CAMALEON_closedEyes_0: 1399550749531962350
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
