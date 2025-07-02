@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14613f59babb00143b42ae5a8941b007, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 0}
+  progressBar: {fileID: 1304871577}
   contador: 0
   velocidadSubida: 5
   velocidadBajada: 2
